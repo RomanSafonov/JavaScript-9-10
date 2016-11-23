@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--<html lang="en">-->
+<head>
+    <meta charset="UTF-8">
+    <title>JS__9-10</title>
+
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/jquery.selectbox.css">
+
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/jcarousel.connected-carousels.js"></script>
+    <script src="js/main-js.js"></script>
+    <script src="js/jquery.color.js"></script>
+    <script src="js/jquery.selectbox-0.2.js"></script>
+    <script src="js/jquery.fs.picker.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Home Work 9-10</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Nav 1</a></li>
+                <li><a href="#">Nav 2</a></li>
+                <li class="dropdown">
+                    <a href="#">Nav 3</a>
+                    <ul class="sub-menu" id="lvl-2">
+                        <li><a href="#">Nav 3.1</a></li>
+                        <li><a href="#">Nav 3.2</a></li>
+                        <li><a href="#">Nav 3.3</a></li>
+                        <li class="dropdown">
+                            <a href="#">Nav 3.4</a>
+                            <ul class="sub-menu" id="lvl-3">
+                                <li><a href="#">Nav 3.4.1</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Nav 3.4.2</a>
+                                    <ul class="sub-menu" id="lvl-4">
+                                        <li><a href="#">Nav 3.4.2.1</a></li>
+                                        <li><a href="#">Nav 3.4.2.2</a></li>
+                                        <li><a href="#">Nav 3.4.2.3</a></li>
+                                        <li><a href="#">Nav 3.4.2.4</a></li>
+                                        <li><a href="#">Nav 3.4.2.5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Nav 3.4.3</a></li>
+                                <li><a href="#">Nav 3.4.4</a></li>
+                                <li><a href="#">Nav 3.4.5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 3.5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav 4</a></li>
+                <li><a href="#">Nav 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="connected-carousels">
+            <div class="stage">
+                <div class="carousel carousel-stage">
+
+                    <ul>
+                        <li><img src="img/images1.jpg" width="740" height="272"
+                                 alt=""></li>
+                        <li><img src="img/images2.jpg" width="738" height="272"
+                                 alt=""></li>
+                        <li><img src="img/images3.jpg" width="738" height="272"
+                                 alt=""></li>
+                        <li><img src="img/images4.jpg" width="740" height="272"
+                                 alt=""></li>
+                        <li><img src="img/images5.jpg" width="738" height="272"
+                                 alt=""></li>
+                        <li><img src="img/images6.jpg" width="738" height="272"
+                                 alt=""></li>
+                    </ul>
+                </div>
+                <p class="photo-credits">
+                    Photos by <a href="http://www.google.com">Google</a>
+                </p>
+                <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+                <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+
+                <p class="jcarousel-pagination">
+            </div>
+            <div class="navigation">
+                <a href="#" class="prev prev-navigation">&lsaquo;</a>
+                <a href="#" class="next next-navigation">&rsaquo;</a>
+
+                <div class="carousel carousel-navigation">
+                    <ul>
+                        <li><img src="img/images1.jpg" width="50" height="50"
+                                 alt=""></li>
+                        <li><img src="img/images2.jpg" width="50" height="50"
+                                 alt=""></li>
+                        <li><img src="img/images3.jpg" width="50" height="50"
+                                 alt=""></li>
+                        <li><img src="img/images4.jpg" width="50" height="50"
+                                 alt=""></li>
+                        <li><img src="img/images5.jpg" width="50" height="50"
+                                 alt=""></li>
+                        <li><img src="img/images6.jpg" width="50" height="50"
+                                 alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--    --------------------------SELECTOR-------------------------------------  -->
+        <select name="country_id" id="country_id" tabindex="1">
+            <option value="">-- Select country --</option>
+            <optgroup label="North America">
+                <option value="1">USA</option>
+                <option value="9">Canada</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="2">France</option>
+                <option value="3">Spain</option>
+                <option value="6">Bulgaria</option>
+                <option value="7" disabled="disabled">Greece</option>
+                <option value="8">Italy</option>
+            </optgroup>
+            <optgroup label="Asia" disabled="disabled">
+                <option value="5">Japan</option>
+                <option value="11">China</option>
+            </optgroup>
+            <option value="4">Brazil</option>
+            <option value="10">South Africa</option>
+        </select>
+        <!--    --------------------------CHECKBOX-------------------------------------  -->
+        <div class="ch-boxes">
+            <form action="#" class="by-jquery">
+                <h3>Checkbox JQuery</h3>
+                <div>
+                    <input id="checkbox-a" class="checkbox__input-jsq" name="checkbox-a" type="checkbox">
+                    <label for="checkbox-a" class="checkbox__label-jsq">First Choice</label>
+                </div>
+                <div>
+                    <input id="checkbox-b" class="checkbox__input-jsq" name="checkbox-b" type="checkbox">
+                    <label for="checkbox-b" class="checkbox__label-jsq">Second Choice</label>
+                </div>
+                <div>
+                    <input id="checkbox-c" class="checkbox__input-jsq" name="checkbox-c" type="checkbox">
+                    <label for="checkbox-c"class="checkbox__label-jsq">Third Choice</label>
+                </div>
+            </form>
+            <form action="#" class="by-css">
+                <h3>Checkbox CSS</h3>
+                <div>
+                    <input id="checkbox-1" class="checkbox__input-css" name="checkbox-1" type="checkbox">
+                    <label for="checkbox-1" class="checkbox__label-css">First Choice</label>
+                </div>
+                    <div>
+                    <input id="checkbox-2" class="checkbox__input-css" name="checkbox-2" type="checkbox">
+                    <label for="checkbox-2" class="checkbox__label-css">Second Choice</label>
+                </div>
+                <div>
+                    <input id="checkbox-3" class="checkbox__input-css" name="checkbox-3" type="checkbox">
+                    <label for="checkbox-3"class="checkbox__label-css">Third Choice</label>
+                </div>
+            </form>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

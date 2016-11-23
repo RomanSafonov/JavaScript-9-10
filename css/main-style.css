@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: hsla(150, 50%, 50%, 0.5);
+}
+
+.wrapper {
+    width: 900px;
+    height: 1600px;
+    margin: 0 auto;
+    background: hsla(180, 50%, 50%, 0.9);
+    position: relative;
+    box-shadow: 0 0 1px 2px hsla(0, 50%, 0%, 0.1);
+    font-family: Ubuntu,Tahoma, Arial, sans-serif;
+}
+
+header {
+
+}
+
+main {
+
+}
+
+footer {
+
+}
+
+/* -----HEADER-------------------------*/
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-shadow: -3px 3px 2px hsla(180, 50%, 0%, 0.2);
+    color: white;
+    font-size: 24px;
+    background: #24a8a8;
+
+}
+
+/*    NAV   */
+nav {
+    background: hsla(180, 60%, 40%, 1);
+    padding: 10px 0;
+    border-top: solid 3px #fff;
+    border-bottom: solid 3px #fff;
+    box-shadow: -1px 1px 6px 3px hsla(0, 50%, 0%, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+/*  sub navigation  */
+nav li ul {
+    background: hsla(180, 60%, 35%, 0.9);
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    top: 40px;
+    width: 200px;
+    border: solid 3px #fff;
+    border-radius: 4px;
+    box-shadow: -1px 1px 6px 3px hsla(0, 50%, 0%, 0.1);
+}
+
+nav li li {
+    position: relative;
+    margin: 0;
+    display: block;
+}
+
+nav li li ul {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: 200px;
+    margin: 0;
+    border: solid 3px #fff;
+    border-radius: 4px;
+    box-shadow: -1px 1px 6px 3px hsla(0, 50%, 0%, 0.1);
+}
+
+/*   links    */
+nav a {
+    line-height: 40px;
+    padding: 0 12px;
+    margin: 0 12px;
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: #fff;
+}
+
+nav li li a {
+    border-bottom: dotted 1px #fff;
+}
+
+nav li li:last-child a {
+    border-bottom: none;
+}
+
+/*    hide submenu     */
+ul.sub-menu {
+    display: none;
+}
+
+/*  show arrows for dropdowns  */
+/* down */
+nav li.dropdown > a:after {
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid white;
+}
+
+/*  right  */
+nav li li.dropdown > a:after {
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-left: 12px solid white;
+}
+
+/* -----------------------------------MAIN-------------------------*/
+/* -----------------Carusel------------------------*/
+
+.connected-carousels .stage {
+    width: 740px;
+    height: 272px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.connected-carousels .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.connected-carousels .photo-credits a {
+    color: #fff;
+}
+
+/** Navigation container **/
+
+.connected-carousels .navigation {
+    width: 260px;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: -1px 1px 2px 3px hsla(0, 50%, 0%, 0.1);
+}
+
+/** Shared carousel styles **/
+
+.connected-carousels .carousel {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.connected-carousels .carousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.connected-carousels .carousel li {
+    float: left;
+}
+
+/** Stage carousel specific styles **/
+
+.connected-carousels .carousel-stage {
+    /*width: 740px;*/
+    height: 272px;
+    border: 10px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+    box-shadow: -1px 1px 6px 3px hsla(0, 50%, 0%, 0.1);
+}
+
+/** Navigation carousel specific styles **/
+
+.connected-carousels .carousel-navigation {
+    height: 60px;
+    width: 240px;
+    background: #fff;
+    border: 10px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+    box-shadow: -1px 1px 2px 3px hsla(0, 50%, 0%, 0.1);
+}
+
+.connected-carousels .carousel-navigation li {
+    cursor: pointer;
+}
+
+.connected-carousels .carousel-navigation li img {
+    display: block;
+    border: 5px solid #fff;
+}
+
+.connected-carousels .carousel-navigation li.active img {
+    border-color: #ccc;
+}
+
+/** Stage carousel controls **/
+
+.connected-carousels .prev-stage,
+.connected-carousels .next-stage {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 305px;
+    height: 410px;
+    color: #fff;
+}
+
+.connected-carousels .prev-stage {
+    left: 0;
+}
+
+.connected-carousels .next-stage {
+    right: 0;
+}
+
+.connected-carousels .prev-stage.inactive,
+.connected-carousels .next-stage.inactive {
+    display: none;
+}
+
+.connected-carousels .prev-stage span,
+.connected-carousels .next-stage span {
+    display: none;
+    position: absolute;
+    top: 33%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+.connected-carousels .prev-stage span {
+    left: 20px;
+}
+
+.connected-carousels .next-stage span {
+    right: 20px;
+}
+
+.connected-carousels .prev-stage:hover span,
+.connected-carousels .next-stage:hover span {
+    display: block;
+}
+
+/** Navigation carousel controls **/
+
+.connected-carousels .prev-navigation,
+.connected-carousels .next-navigation {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 16px/29px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+.connected-carousels .prev-navigation {
+    left: -15px;
+    top: 22px;
+    text-indent: 6px;
+}
+
+.connected-carousels .next-navigation {
+    right: -15px;
+    top: 22px;
+    text-indent: 20px;
+}
+
+.connected-carousels .prev-navigation.inactive,
+.connected-carousels .next-navigation.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+/* --------------------------------- CSS CHECK BOX -------------------------*/
+.ch-boxes {
+    margin: 20px 0;
+    background: hsla(180, 60%, 35%, 0.2);
+    width: 100%;
+    box-shadow: -1px 1px 6px 3px hsla(0, 50%, 0%, 0.1);
+    height: 165px;
+    font-family: Arial, sans-serif;
+    color: #ddd;
+}
+
+h3 {
+    color: #ddd;
+    margin: 5px;
+    text-align: center;
+}
+
+form {
+    margin: 10px 0 0 40px;
+    background: hsla(180, 60%, 35%, 0.5);
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    box-shadow: -1px 1px 6px 3px hsla(0, 50%, 0%, 0.1);
+    padding: 10px;
+    width: 40%;
+    display: block;
+    float: left;
+    height: 120px;
+}
+
+form:hover {
+    border: solid 1px #fff;
+    background: hsla(180, 60%, 35%, 0.6);
+    box-shadow: 0 0 2px 1px hsla(0, 50%, 0%, 0.1);
+    transition: 0.2s;
+}
+
+form div {
+    margin: 0 20px 10px;
+    position: relative;
+}
+
+form > div > label {
+    cursor: pointer;
+    position: relative;
+}
+
+form div label:hover {
+    color: #fff;
+    transition: 0.2s;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+    position: absolute;
+    /*opacity: 0;*/ /* дает эффект в виде контура в состоянии фокус */
+}
+/* -------------- CSS -----------*/
+.checkbox__input-css, .checkbox__label-css {
+    color: #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox__input-css + .checkbox__label-css:before {
+    content: ' ';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 14px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.checkbox__input-css:checked + .checkbox__label-css:before {
+    content: "v";
+    padding-bottom: 4px;
+    background: #4E443C;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.checkbox__input-css:focus + .checkbox__label-css {
+    outline: 1px solid #ddd;
+    transition: 0.2s;
+}
+
+/* -------------- JQuery -----------*/
+
+.checkbox__input-jsq, .checkbox__label-jsq {
+    color: #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox__input-jsq + .checkbox__label-jsq:before {
+    content: ' ';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 14px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.isChecked + .checkbox__label-jsq:before {
+    content: "v";
+    padding-bottom: 4px;
+    background: #4E443C;
+    color: #fff;
+    transition: 0.2s;
+}
+
+/*.checkbox__input-jsq:focus + .checkbox__label-jsq {*/
+    /*outline: 1px solid #ddd;*/
+    /*transition: 0.2s;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
